@@ -10,7 +10,7 @@ public class Toaster {
         Toast toast = new Toast(context);
         TextView tv=new TextView(context);
         tv.setText(msg);
-        tv.setBackgroundColor(Color.parseColor("#61A465"));
+        tv.setBackgroundColor(Color.parseColor("#62A465"));
         tv.setPadding(50,20,50,20);
         tv.setTextColor(Color.WHITE);
         tv.setTextSize(14);
@@ -21,7 +21,29 @@ public class Toaster {
         Toast toast = new Toast(context);
         TextView tv = new TextView(context);
         tv.setText(msg);
-        tv.setBackgroundColor(Color.parseColor("#D82727"));
+        tv.setBackgroundColor(Color.parseColor("#D92727"));
+        tv.setPadding(50,20,50,20);
+        tv.setTextColor(Color.WHITE);
+        tv.setTextSize(14);
+        toast.setView(tv);
+        toast.show();
+    }
+    public static void info(Context context, String msg){
+        Toast toast = new Toast(context);
+        TextView tv = new TextView(context);
+        tv.setText(msg);
+        tv.setBackgroundColor(Color.parseColor("#5060BA"));
+        tv.setPadding(50,20,50,20);
+        tv.setTextColor(Color.WHITE);
+        tv.setTextSize(14);
+        toast.setView(tv);
+        toast.show();
+    }
+    public static void warning(Context context, String msg){
+        Toast toast = new Toast(context);
+        TextView tv = new TextView(context);
+        tv.setText(msg);
+        tv.setBackgroundColor(Color.parseColor("#FDAF17"));
         tv.setPadding(50,20,50,20);
         tv.setTextColor(Color.WHITE);
         tv.setTextSize(14);
