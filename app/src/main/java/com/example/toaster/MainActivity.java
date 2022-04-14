@@ -15,5 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Toaster test
         Toaster.success(this,"Successful");
+        Toaster.error(this, "Error");
+        Toaster.info(this, "Info");
+        Toaster.warning(this, "Warning");
     }
 }
